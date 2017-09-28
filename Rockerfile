@@ -1,0 +1,8 @@
+FROM williamyeh/ansible:centos7
+
+RUN echo localhost > inventory
+RUN yum install -y -q epel-release
+RUN yum -y -q install awscli jq git sudo net-tools https://packages.chef.io/files/stable/inspec/1.31.1/el/7/inspec-1.31.1-1.el7.x86_64.rpm
+MOUNT {{ .Env.HOME }}/.aws:/root/.aws
+CMD ["/usr/sbin/init"]
+TAG {{ .Env.CWD }}:latest

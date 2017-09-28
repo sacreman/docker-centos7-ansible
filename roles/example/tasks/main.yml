@@ -1,0 +1,4 @@
+---
+
+- name: print hello world
+  command: echo "hello world"
