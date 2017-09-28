@@ -2,7 +2,7 @@
 
 Clone into a new folder name matching whatever Ansible role you'd like to create.
 
-`git@github.com:sacreman/docker-centos7-ansible.git my-ansible-role`
+`git clone git@github.com:sacreman/docker-centos7-ansible.git my-ansible-role`
 
 Use the `make` commands mentioned in the section below to build and interact with the container.
 
