@@ -6,7 +6,8 @@ Clone into a new folder name matching whatever Ansible role you'd like to create
 
 Use the `make` commands mentioned in the section below to build and interact with the container.
 
-Don't edit the `Makefile` or `Rockerfile` unless you know what you're doing.
+Don't edit the `Makefile` or `Rockerfile`, they should work out of the box. The only reason to change these files 
+are if you need to expose ports, add galaxy requirements or alter the container base image.
 
 Add Ansible roles into `roles/` and reference them in `playbook.yaml` so they run.
 
